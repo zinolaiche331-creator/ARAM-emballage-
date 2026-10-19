@@ -1,0 +1,13 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "ARAM emballage",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "emballage",
+  "start_url": "/",
+  "theme_color": "#101010",
+  "id": "[https://zinolaiche331-creator.github.io/ARAM-emballage/](https://zinolaiche331-creator.github.io/ARAM-emballage/)",
+  "description": "تطبيق_لتسير_محلات_تجارية"
+}
