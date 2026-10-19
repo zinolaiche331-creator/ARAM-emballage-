@@ -1,0 +1,9 @@
+{
+  "appId": "dz.aram.emballage",
+  "appName": "ARAM emballage",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "android": {
+    "allowMixedContent": false
+  }
+}

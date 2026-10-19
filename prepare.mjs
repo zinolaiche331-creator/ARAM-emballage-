@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+import path from 'node:path';
+const root = process.cwd();
+const out = path.join(root, 'www');
+fs.mkdirSync(out, { recursive: true });
+let html = fs.readFileSync(path.join(root, 'ARAM_emballage_prototype.html'), 'utf8');
+const scripts = `\n<script src="./zxing-bundle.js"></script>\n<script src="./scanner-bridge.js"></script>\n`;
+if (!html.includes('scanner-bridge.js')) html = html.replace('</head>', `${scripts}</head>`);
+fs.writeFileSync(path.join(out, 'index.html'), html, 'utf8');
+fs.copyFileSync(path.join(root, 'scripts', 'scanner-bridge.js'), path.join(out, 'scanner-bridge.js'));
+console.log('Prepared offline web app in www/');
